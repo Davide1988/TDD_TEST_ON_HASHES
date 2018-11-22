@@ -14,3 +14,21 @@ def add_friend(person,new_friend)
    person[:friends].push(new_friend)
    person[:friends].length
 end
+
+def remove_friend(person)
+  person[:friends].pop
+  return person[:friends].length
+end
+
+
+def total_money(people)
+  total = 0
+  for person in people
+    #person_money = person[:monies]
+    total += person[:monies]
+  end
+  return total
+end
+
+# def loan_money
+# end
