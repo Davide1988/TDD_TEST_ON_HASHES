@@ -9,3 +9,8 @@ end
 def likes_to_eat(person, food)
     return true if person[:favourites][:snacks][0] = food
 end
+
+def add_friend(person,new_friend)
+   person[:friends].push(new_friend)
+   person[:friends].length
+end
